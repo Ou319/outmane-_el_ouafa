@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Chat</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  .chat-container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .chat-header {
+    background-color: #075e54;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .chat-messages {
+    padding: 10px;
+  }
+  .message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .incoming {
+    background-color: #dcf8c6;
+    align-self: flex-start;
+  }
+  .outgoing {
+    background-color: #e2e2e2;
+    align-self: flex-end;
+  }
+</style>
+</head>
+<body>
+
+<div class="chat-container">
+  <div class="chat-header">WhatsApp Chat</div>
+  <div class="chat-messages">
+    <div class="message incoming">Hi there!</div>
+    <div class="message outgoing">Hello! How can I help you?</div>
+    <div class="message incoming">I'm interested in your products.</div>
+    <div class="message incoming">Can you provide more information?</div>
+    <div class="message outgoing">Sure, let me get that for you...</div>
+  </div>
+</div>
+
+</body>
+</html>

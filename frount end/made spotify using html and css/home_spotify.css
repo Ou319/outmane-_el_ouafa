@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+}
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+section main{
+width: 33%;
+height: 90%;
+background: ;
+margin: 16px;
+}
+section main .li1{
+    width: 100%;
+    height: 90px;
+    background: #282727c2;
+    border-radius: 10px;
+    list-style: none;
+    margin-top: 20px;
+}
+section main .li1 span{
+    position: relative;
+    margin: 5px;
+    left: 13px;
+    transition: .1s linear;
+    cursor: pointer;
+    background: ;
+    padding: 3px;
+    border-radius: 50pc;
+    top: 2px;
+    margin-top: 1px;
+}
+section main .li1 span:hover{
+    background: #dddddd1e;
+}
+section main .li1 p{
+    color: #ddd;
+    position: relative;
+    left: 60px;
+    font-family: sans-serif;
+    top: -28px;
+    transition: .2s linear;
+}
+section main .li1 p:hover{
+    color: #fff;
+    cursor: pointer;
+}
+section main .li2{
+    list-style: none;
+    width: 100%;
+    height: 430px;
+    overflow-x: auto;
+    background: #282727c2;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+::-webkit-scrollbar{
+    width: 3px;
+}
+section main .li2 nav{
+    display: flex;
+   justify-content: space-around;
+   margin-top: 10px;
+   position: static;
+   height: 40px;align-items: center;
+    background: transparent;
+    color: #ccc;
+}
+section main .li2 nav span{
+    color: #ccc;
+}
+section main .li2 nav span:hover{
+    color: #fff;
+    cursor: pointer;
+}
+section main .li2 nav p{
+    color: #ccc;
+    cursor: pointer;
+    font-family: cursive;
+}
+section main .li2 nav p:hover{
+   color: #fff;
+}
+section main .li2 article{
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    margin-left: 5px;
+}
+section main .li2 article p{
+    background: rgba(50, 48, 48, 0.587);
+    padding: 10px;
+    font-family: cursive;
+    font-size: 13px;
+    border-radius: 30pc;
+    cursor: pointer;
+}
+section main .li2 .finf{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 19px;
+    color: #ccc;
+}
+section main .li2 .finf p{
+    color: #ccc;
+    margin-top: 0px;
+    cursor: pointer;
+}
+section main .li2 .finf p:hover{
+    background: rgba(50, 48, 48, 0.587);
+}
+section main .li2 .finf span{
+    cursor: pointer;
+    margin: 10px;
+}
+section main .li2 footer{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+section main .li2 footer li{
+    width: 100%;
+    height: 70px;
+    position: relative;
+margin-top: 10px;
+transition: all .1s linear;
+cursor: pointer;
+}
+section main .li2 footer li:hover{
+    background: #cccccc3f;
+}
+section main .li2 footer li img{
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-left: 4px;
+}
+section main .li2 footer li h2{
+    font-family: cursive;
+    font-size: 17px;
+    margin-left: 60px;
+    margin-top: 0px;
+    position: relative;
+    top: 10px;
+}
+section main .li2 footer li p{
+    color: #ccc;
+    position: relative;
+    left: 60px;
+    top: 16px;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+section aside{
+    width: 67%;
+    height: 82%;
+    border-radius: 10px;
+    position: relative;
+    background: #282727c2;
+    top: 40px;
+}
+section aside nav{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+section aside nav span{
+    margin: 10px;
+}
+section aside nav .nav_bar{
+    display: flex;
+    align-items: center;
+    margin-top: -60px;
+}
+section aside nav .nav_bar P{
+    background: #fff;
+    color: #000;
+    font-family: cursive;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 50pc;
+}

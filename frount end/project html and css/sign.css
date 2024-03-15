@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: fixed;
+}
+form{
+    width: 320px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    position: absolute;
+    left: 800px;
+    box-shadow: 0 0 100px #ccc;
+    top: 100px;
+    border-radius: 20px;
+    height: 440px;
+}
+form img{
+    position: absolute;
+    z-index: -1;
+    left: -100px;
+}
+form h2{
+    color: rgba(0,0,0,.8);
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+form article{
+    position: relative;
+    margin-top: 40px;
+}
+form article input{
+    width: 90%;
+    height: 38px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: #dddddd;
+    margin-top: 17px;
+}
+form article button{
+    border: none;
+    width: 160px;
+    height: 34px;
+    margin-top: 40px;
+    background: rgb(20, 145, 241);
+    border-radius: 20px;
+    font-weight: 900;
+    color: #fff;
+    cursor: pointer;
+}
+section{
+    position: absolute;
+    left: 0;
+    width: 700px;
+    height: 900px;
+    background: linear-gradient(rgb(27, 177, 232),rgb(60, 185, 239));
+    border-radius: 0 0%  90% 0;
+    animation: me 1s linear 1;
+}
+@keyframes me{
+    0%{
+        width: 400px;
+    }
+}
+section img{
+    position: relative;
+    top: 100px;
+    animation: top 1s linear 1;
+}
+@keyframes top{
+    0%{
+        top: 400px;
+    }
+}
+section h1{
+    position: relative;
+    left: 300px;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: rgba(0,0,0,.7);
+    top: 30px;
+}
+section a{
+    position: relative;
+    left: 300px;
+    top: 70px;
+    color: #fff;
+    position: absolute;
+    left: 350px;
+    z-index: 100000000;
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: cursive;
+    border: solid 2px #fff;
+    width: 100px;
+    height: 33px;
+    border-radius: 50pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

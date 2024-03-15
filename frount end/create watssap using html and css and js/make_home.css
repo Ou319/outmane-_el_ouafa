@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+;
+}
+body{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+section{
+    width: 330px;
+    height: 560px;
+    background: transparent;
+    border: solid 8px;
+    border-radius: 30px;
+    position: relative;
+}
+section::after{
+    content: "";
+    position: absolute;
+    left: 26%;
+    top: 0;
+    z-index: 1000;
+    border-radius: 0 0 10px 10px;
+    background: #000;
+    width: 150px;
+    height: 30px;
+}
+section::before{
+    content: "";
+    position: absolute;
+    left: 28%;
+    bottom: 0;
+    padding: 0;
+    width: 140px;
+    height: 4px;
+    background: #0f0e0e;
+    border-radius: 20px 20px 0 0;
+    z-index: 1000;
+}
+section header{
+    width: 100%;
+    height: 130px;
+    background: rgb(85, 255, 0);
+    border-radius: 20px 20px ;
+    z-index: 100;
+}
+section header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    position: absolute;
+}
+section header nav h1{
+    font-weight: 900;
+    color: #fff;
+    font-family: cursive;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+section header nav .nav_bar{
+    margin-top: 8px;
+}
+section header nav .nav_bar span{
+    margin-right: 4px;
+    padding: 4px;
+    border-radius: 13px;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+section header nav .nav_bar span:hover{
+    background: rgba(84, 152, 84, 0.548);
+}
+section header aside{
+    width: 100%;
+    position: absolute;
+    margin-top: 95px;
+    display: flex;
+    justify-content: space-evenly;
+}
+section header aside a{
+    background: transparent;
+    padding: 6px;
+    padding-right: 13px;
+    padding-left: 13px;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    font-family: cursive;
+    transition: all .2s linear;
+
+}
+section header aside a::after{
+    content: "";
+    position: absolute;width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    transition: all .2s linear;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+section header aside a:hover::after,
+section header aside a:focus::after{
+    transform: scaleX(1);
+}
+section header aside a:hover{
+    background: #cccccc3b;
+}
+section article{
+    width: 100%;
+    height: 440px;
+position: absolute;
+margin-top: -17px;
+border-radius: 0 0 30px 30px;
+    background: #fff;
+    z-index: -1;
+}
+section article main{
+   position: relative;
+    top: -26px;
+    left: 10px;
+    color: #000;
+}
+section article main li{
+    list-style: none;
+    width: 96%;
+    height: 60px;
+    margin-left: -6px;
+    transition: all .2s linear;
+    background: transparent;
+    cursor: pointer;
+    z-index: 10000000000000000;
+    border-bottom: solid 1px #ccc;
+}
+section article main li img{
+    border-radius: 50pc;
+    position: relative;
+    border: solid 1px #ddd;
+    left: 0px;
+    cursor: pointer;
+    top: 4px;
+}
+section article main li h2{
+    color: #000;
+    font-family: cursive;
+    font-size: 19px;
+    position: relative;
+    left: 60px;
+    font-weight: 400;
+    top: 5px;
+}
+section article main li p{
+position: absolute;
+left: 60px;
+margin-top: 3px;
+color: #00f;
+font-family: sans-serif;
+font-size: 14px;
+}
+section article main li span{
+    background: rgb(17, 201, 3);
+   position: relative;
+   left: 280px;
+   top: -8px;
+   padding: 7px;
+   border-radius: 50pc;
+   font-family: sans-serif;
+}

@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+}
+body::before{
+    content: "";
+    width: 900px;
+    height: 700px;
+    position: fixed;
+    left: 700px;
+    border-radius: 0% 0 0 90%;
+    animation: me 1s linear 1;
+    background: linear-gradient(rgb(27, 177, 232),rgb(60, 185, 239));
+}
+@keyframes me{
+    0%{
+      left: 900px;
+    }
+}
+form{
+    position: relative;
+    left: 200px;
+    height: 450px;
+    width: 300px;
+    top: 100px;
+    text-align: center;
+}
+form main{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    z-index: 1000000000;
+    border-radius: 20px;
+    box-shadow: 0 0 100px #ccc;
+}
+form img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+form main h2{
+    margin-top: 10px;
+    position: relative;
+    top: 30px;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: rgba(0,0,0,.7);
+}
+form main input{
+    width: 90%;
+    height: 38px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: none;
+    background: #ddd;
+    z-index: 1000000000;
+    outline: none;
+}
+form main article{
+    margin-top: 70px;
+}
+form main button{
+    border: none;
+    width: 160px;
+    height: 34px;
+    z-index: 1000000000;
+    margin-top: 40px;
+    background: rgb(20, 145, 241);
+    border-radius: 20px;
+    font-weight: 900;
+    color: #fff;
+    cursor: pointer;
+}
+section{
+    position: relative;
+    left: 500px;
+    text-align: center;
+    top: 160px;
+}
+section aside h1{
+   font-family: sans-serif;
+   font-weight: 900;
+   color: rgba(0,0,0,.7);
+}
+section aside img{
+    position: relative;
+    left: -230px;
+    top: 0;
+    animation: top 1s linear 1;
+}
+@keyframes top{
+    0%{
+      top: 200px;
+    }
+}
+section aside p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+section aside a{
+    color: #fff;
+    position: absolute;
+    left: 250px;
+    z-index: 100000000;
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: cursive;
+    border: solid 2px #fff;
+    width: 100px;
+    height: 33px;
+    border-radius: 50pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000000;
+}
+@media all and (max-width:1200px){
+    section{
+        position: relative;
+        left: 300px;
+        text-align: center;
+        top: 160px;
+    }
+    section aside p{
+        font-size: 10px;
+    }
+}
+@media all and (max-width:900px){
+    section{
+        position: relative;
+        left: 100px;
+        text-align: center;
+        top: 160px;
+    }
+    body::before{
+        content: "";
+        width: 900px;
+        height: 700px;
+        position: fixed;
+        left: 500px;
+        border-radius: 0% 0 0 90%;
+        animation: me 1s linear 1;
+        background: linear-gradient(rgb(27, 177, 232),rgb(60, 185, 239));
+    }
+    section aside img{
+        position: relative;
+        left: -130px;
+        top: 0;
+        animation: top 1s linear 1;
+        z-index: 1100;
+    }
+    form{
+        position: relative;
+        left: 100px;
+        height: 450px;
+        width: 300px;
+        top: 100px;
+        text-align: center;
+    }
+}
+@media all and (max-width:700px){
+    body::before{
+        content: "";
+        width: 600px;
+        animation: none;
+        rotate: 65deg;
+        height: 700px;
+        position: fixed;
+        border-radius: 0% 0 0 90%;
+        animation: me 1s linear 1;
+        background: linear-gradient(rgb(27, 177, 232),rgb(60, 185, 239));
+    }
+    section aside img{
+        position: relative;
+        left: -630px;
+        top: 0;
+        animation: top 1s linear 1;
+        z-index: 1100;
+    }
+    form{
+        position: relative;
+        left: 200px;
+        height: 450px;
+        width: 300px;
+        top: 100px;
+        text-align: center;
+    }
+    section aside p{
+        display: none;
+    }
+    section aside a{
+        color: #fff;
+        position: absolute;
+        left: 170px;
+        top: 300px;
+        z-index: 100000000;
+        margin-top: 20px;
+        text-decoration: none;
+        font-family: cursive;
+        border: solid 2px #fff;
+        width: 100px;
+        height: 33px;
+        border-radius: 50pc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000000000;
+    }
+    section aside h1{
+        font-family: sans-serif;
+        font-weight: 900;
+        position: relative;
+        top: 280px; left: -90px;
+        color: rgba(0,0,0,.7);
+     }
+}
+@media all and (max-width:500px){
+    body::before{
+        content: "";
+        width: 700px;
+        animation: none;
+        rotate: 85deg;
+        left: 0;
+        top: 300px;
+        height: 900px;
+        position: fixed;
+        border-radius: 0% 0 0 90%;
+        animation: me 1s linear 1;
+        background: linear-gradient(rgb(27, 177, 232),rgb(60, 185, 239));
+    }
+    section aside h1{
+        font-family: sans-serif;
+        font-weight: 900;
+        position: relative;
+        top: 320px; 
+        left: -290px;
+        color: rgba(0,0,0,.7);
+     }
+     section aside a{
+        color: #fff;
+        position: absolute;
+        left: -50px;
+        top: 360px;
+        z-index: 100000000;
+        margin-top: 20px;
+        text-decoration: none;
+        font-family: cursive;
+        border: solid 2px #fff;
+        width: 100px;
+        height: 33px;
+        border-radius: 50pc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000000000;
+    }
+    form{
+        position: relative;
+        left: 140px;
+        height: 450px;
+        width: 300px;
+        top: 0px;
+        text-align: center;
+    }
+    section aside img{
+        position: relative;
+        left: -630px;
+        width: 500px;
+        top: 0;
+        animation: top 1s linear 1;
+        z-index: 1100;
+    }
+}

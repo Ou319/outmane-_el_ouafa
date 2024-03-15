@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    height: 50px;
+    box-shadow: 0 0 10px #ccc;
+    z-index: 100;
+}
+header nav .nav_bar {
+    margin-top: 16px;
+    margin-left: 30px;
+}
+header nav button{
+    display: none;
+    position: relative;
+    left: -20px;
+    height: 30px;
+    width: 50px;
+    top: 8px;
+}
+header nav button main{
+    position: relative;
+  left: -356px;
+    list-style: none;
+    width: 70vh;
+    height: 90vh;
+    margin-top: 60px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+header nav button:focus main{
+    display: block;
+}
+header nav button main .lien{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+    gap: 74px;
+}
+header nav button main .lien li a{
+    text-decoration: none;
+    color: #000;
+    font-family: cursive;
+    background: #cccccc48;
+    width: 300px;
+    position: absolute;
+    margin-left: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 10px #ccc;
+    align-items: center;
+    left: 0px;
+}
+header nav button main .lien a{
+    background: #0000006d;
+    width: 150px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: cursive;
+    text-decoration: none;
+    font-weight: 900;
+    position: relative;
+  
+}
+header nav .nav_bar a {
+    text-decoration: none;
+    margin-right: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+
+}
+
+header nav .loge {
+    margin-top: 10px;
+    margin-right: 29px;
+    width: 100px;
+    font-family: sans-serif;
+    border-radius: 0px;
+    height: 30px;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header aside {
+    position: absolute;
+    right: 0;
+    width: 53rem;
+    top: -20px;
+    left: 600px;
+    animation: size 1s linear 1;
+}
+
+@keyframes size {
+    0% {
+        width: 30rem;
+    }
+}
+
+header article {
+    position: absolute;
+    top: 250px;
+}
+
+header article h1 {
+    font-family: sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #00f;
+    font-size: 2em;
+    margin-left:180px;
+}
+
+header article p {
+    font-family: sans-serif;
+    margin-left:180px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+header article button {
+    margin-left:180px;
+    margin-top: 20px;
+    width: 120px;
+    height: 38px;
+    border: none;
+    background: rgb(54, 123, 219);
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+header article img {
+    width: 16em;
+    left: -40px;
+    position: absolute;
+}
+@media all and (max-width:600px){
+    header nav button{
+        display: block;
+    }
+    header nav .nav_bar{
+        display: none;
+    }
+    header nav .loge{
+        display: none;
+    }
+}
